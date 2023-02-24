@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.principale {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  width: 100%;
+  background: red;
+}
+
+.xbox {
+  padding-top: 10%;
+  display: grid;
+  grid-template-rows: 15% 1fr;
+  justify-items: center;
+  background: green;
+  height: 100vh;
+  width: 100%;
+}
+.xbox img {
+  width: 10%;
+  border-radius: 50px;
+  transition: 2s ease;
+}
+.xbox .imgactive {
+  width: 10%;
+  border: 1px solid whitesmoke;
+  border-radius: 50px;
+  background: whitesmoke;
+  transition: 2s cubic-bezier(0.42, -0.28, 0.9, 0.18);
+}
+.xbox .xboxcontainer {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.showxboxlist {
+  width: 105px;
+  height: 15px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: 2.2s ease;
+}
+
+.checkxboxlist {
+  width: 105px;
+  height: 15px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  opacity: 1;
+  transition: 2.2s ease;
+  transform: translateX(0);
+}
+
+.showmovielist {
+  width: 105px;
+  height: 15px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  opacity: 0;
+  transform: translateX(300px);
+  transition: 2.2s ease;
+}
+
+.checkmovielist {
+  width: 105px;
+  height: 15px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  opacity: 1;
+  transition: 2.2s ease;
+  transform: translateX(0);
+}
+
+.movie {
+  padding-top: 10%;
+  display: grid;
+  grid-template-rows: 15% 1fr;
+  justify-items: center;
+  background: blue;
+  height: 100vh;
+  width: 100%;
+}
+.movie img {
+  width: 15%;
+}
+.movie .moviecontainer {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  .principale {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .xbox, .movie {
+    padding-top: 2%;
+  }
+  .xboxcontainer, .moviecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */

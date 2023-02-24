@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xbox et Films</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <div class="principale">
+        <div class="xbox">
+
+            <img id="xboxicon" src="./img/xbox.png">
+            <div class="xboxcontainer">
+                <form id="xboxform" action="">
+                    <input id="xboxsearch" type="text" placeholder="Chercher un jeu" autocomplete="on">
+                </form>
+                <button class="showxboxlist" id="showxboxlist">Voir la liste</button>
+                <span id="xboxresult"></span>
+                <form id="xboxformpush" action="">
+                    <input id="xboxpush" type="text" placeholder="Ajouter un jeu" autocomplete="on">
+                </form>
+                <span id="xboxresultpush"></span>
+            </div>
+
+        </div>
+        <div class="movie">
+
+            <img id="movieicon" src="./img/br.png">
+            <div class="moviecontainer">
+                <form id="movieform" action="">
+                    <input id="moviesearch" type="text" placeholder="Chercher un film" autocomplete="on">
+                </form>
+                <button class="showmovielist" id="showmovielist">Voir la liste</button>
+                <span id="movieresult"></span>
+                <form id="movieformpush" action="">
+                    <input id="moviepush" type="text" placeholder="Ajouter un film" autocomplete="on">
+                </form>
+                <span id="movieresultpush"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
