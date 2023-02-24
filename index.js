@@ -40,6 +40,10 @@ let xboxlist = [
   "dying light",
   "dynasty warriors 8 empires",
   "extinction",
+  "far cry 4",
+  "far cry 5",
+  "far cry 6",
+  "far cry primal",
 ];
 let movielist = ["shang chi"];
 // console.log(xboxsearch.value.toLowerCase().slice(0, 1));
